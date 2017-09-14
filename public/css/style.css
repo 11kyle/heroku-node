@@ -14,13 +14,44 @@ textarea {
   }
 }
 
+.primary-font {
+  font-family: 'Nunito', sans-serif !important;
+}
+.primary-color {
+  color: #F15725;
+}
+
+.btn-primary {
+  background-color: #F15725;
+  border-color: #F15725
+}
+.btn-primary:hover {
+  background-color: #E34725;
+  border-color: #E34725;
+}
+.btn-primary:active {
+  background-color: #E34725 !important;
+  border-color: #E34725 !important;
+  box-shadow: 0 0 8px rgba(241, 87, 37, 0.5) !important;
+  outline: none !important;
+}
+.btn-primary:visited {
+  background-color: #E34725 !important;
+  border-color: #E34725 !important;
+  outline: none !important;
+}
+.btn-primary:focus {
+  background-color: #E34725 !important;
+  border-color: #E34725 !important;
+  outline: none !important;
+}
 
 
 
 body {
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #eee;
+  background-color: #fff;
 }
 
 .form-signin {
@@ -49,11 +80,12 @@ body {
 }
 .form-signin input[type="email"] {
   margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
 }
 .form-signin input[type="password"] {
   margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+}
+
+input:focus {
+  border-color: #F15725 !important;
+  box-shadow: 0 0 8px rgba(241, 87, 37, 0.5) !important;
 }

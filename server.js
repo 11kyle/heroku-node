@@ -11,7 +11,7 @@ var User = require('./models/user');
 
 var app = express();
 
-app.set('port', (process.env.PORT || 5000));
+app.set('port', (process.env.PORT || 3000));
 
 mongoose.Promise = require('bluebird');
 // Connect to a database
