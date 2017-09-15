@@ -15,12 +15,7 @@ app.set('port', (process.env.PORT || 3000));
 
 mongoose.Promise = require('bluebird');
 // Connect to a database
-mongoose.connect('mongodb://kjohnson:PPwgzRYo11@ds063946.mlab.com:63946/blog', function(err) {
-  if (err) {
-    return console.log(err);
-  }
-});
-//mongoose.connect('mongodb://localhost:27017/blogfall2016');
+mongoose.connect('mongodb://localhost:27017/blogfall2016');
 
 // Parse incoming content
 app.use(bodyParser.json()); // for parsing application/json
